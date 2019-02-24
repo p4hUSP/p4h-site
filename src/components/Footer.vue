@@ -6,11 +6,6 @@
           Siga-nos nas redes sociais. Caso tenha alguma dúvida, fique a vontade para enviar um e-mail!
         </span>
       </div>
-      <div class="">
-        <svg class="text-white">
-           <font-awesome-icon icon=["fab", "fa-facebook"]/>
-        </svg>
-      </div>
     </div>
     <p class="text-grey">Email: p4husp@gmail.com</p>
     <br/>
