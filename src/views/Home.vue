@@ -1,10 +1,10 @@
 <template>
   <div>
-    <NavBar/>
-    <Header/>
-    <About/>
-    <Service/>
-    <Footer/>
+    <NavBar />
+    <Header />
+    <About />
+    <Service />
+    <Footer />
   </div>
 </template>
 
@@ -15,7 +15,6 @@ import Header from "@/components/Header.vue";
 import About from "@/components/About.vue";
 import Service from "@/components/Service.vue";
 import Footer from "@/components/Footer.vue";
-
 
 export default {
   name: "home",
