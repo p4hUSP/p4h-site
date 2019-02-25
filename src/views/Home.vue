@@ -1,10 +1,10 @@
 <template>
   <div>
-    <NavBar />
-    <Header />
-    <About />
-    <Service />
-    <Footer />
+    <NavBar :navLinksLeft="navLinksLeft" :navLinksRight="navLinksRight"/>
+    <Header/>
+    <About/>
+    <Service/>
+    <Footer/>
   </div>
 </template>
 
@@ -24,6 +24,38 @@ export default {
     About,
     Service,
     Footer
+  },
+  data () {
+    return {
+      navLinksLeft: [
+        {
+          name: 'Home',
+          redirect: '#'
+        },
+        {
+          name: 'Sobre',
+          redirect: '#about'
+        },
+        {
+          name: 'Serviços',
+          redirect: '#services'
+        },
+        {
+          name: 'Contato',
+          redirect: '#contact'
+        }
+      ],
+      navLinksRight: [
+        {
+          name: 'Blog',
+          redirect: 'https://medium.com/p4husp'
+        },
+        {
+          name: 'Material',
+          redirect: 'https://p4husp.github.io/material'
+        }
+      ]
+    }
   }
 };
 </script>
