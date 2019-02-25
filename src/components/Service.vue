@@ -1,5 +1,5 @@
 <template lang="html">
-  <section class="mx-auto py-16 bg-grey-lighter">
+  <section id="services" class="mx-auto py-16 bg-grey-lighter">
     <h2 class="text-5xl text-center text-black">
       Serviços
     </h2>

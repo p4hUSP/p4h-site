@@ -1,5 +1,5 @@
 <template lang="html">
-  <footer class="bg-black py-8 px-16 px">
+  <footer id="contact" class="bg-black py-8 px-16 px">
     <div class="flex flex-wrap items-center justify-around">
       <div class="flex flex-col items-center content-around">
         <div class="px-4 py-6">

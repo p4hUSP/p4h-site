@@ -5,11 +5,11 @@
         <font-awesome-icon :icon="serviceInfo.icon" />
       </svg>
     </div>
-    <h3 class="text-2xl text-black">
+    <h3 class="fton-sanstext-2xl text-black">
       {{ serviceInfo.title }}
     </h3>
     <div class="py-4 px-4">
-      <span class="text-grey-darker">
+      <span class="font-serif text-grey-darker">
         {{ serviceInfo.description }}
       </span>
     </div>
