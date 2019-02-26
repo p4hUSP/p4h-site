@@ -17,7 +17,7 @@
       <ul
         :class="[
           'list-reset text-3xl toggled-items',
-          toggled ? 'visible' : 'invisible ml-0 opacity-0'
+          toggled ? 'visible toggled-items-in' : 'invisible ml-0 opacity-0 toggled-items-out'
         ]"
       >
         <li
@@ -35,8 +35,8 @@
       </ul>
       <ul
         :class="[
-          'list-reset text-3xl toggled-items',
-          toggled ? 'visible' : 'invisible ml-0 opacity-0'
+          'list-reset text-3xl',
+          toggled ? 'visible toggled-items-in' : 'invisible ml-0 opacity-0 toggled-items-out'
         ]"
       >
         <li
@@ -90,7 +90,13 @@ export default {
   transition: all 0.4s ease-in-out;
 }
 
-.toggled-items {
-  transition: all 0.1s ease-in-out;
+.toggled-items-in {
+  transition: all 0.4s ease-in-out;
 }
+
+
+.toggled-items-out {
+  transition: all 0.2s ease-in-out;
+}
+
 </style>
