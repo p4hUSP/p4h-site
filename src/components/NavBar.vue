@@ -8,21 +8,35 @@
         ><img class="h-12" src="@/assets/logo_min.png" alt="Logo da P4HUSP"
       /></a>
       <ul class="flex items-center list-reset font-sans text-base uppercase">
-        <li v-for="navlink in navLinksLeft" class="ml-6">
-          <a class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">{{ navlink.name }}</a>
+        <li
+          v-for="navlink in navLinksLeft"
+          v-bind:key="navlink.name"
+          class="ml-6"
+        >
+          <a
+            class="no-underline text-grey-dark hover:text-grey"
+            :href="navlink.redirect"
+            >{{ navlink.name }}</a
+          >
         </li>
       </ul>
     </div>
     <div class="flex flex-wrap">
       <ul class="flex items-center list-reset font-sans text-base uppercase">
-        <li class="ml-6" v-for="navlink in navLinksRight">
-          <a class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">
-            {{navlink.name}}
+        <li
+          v-for="navlink in navLinksRight"
+          v-bind:key="navlink.name"
+          class="ml-6"
+        >
+          <a
+            class="no-underline text-grey-dark hover:text-grey"
+            :href="navlink.redirect"
+          >
+            {{ navlink.name }}
           </a>
         </li>
       </ul>
     </div>
-
   </nav>
 </template>
 
@@ -31,14 +45,14 @@ export default {
   props: {
     navLinksLeft: {
       type: Array,
-      default () {
-        return []
+      default() {
+        return [];
       }
     },
     navLinksRight: {
       type: Array,
-      default () {
-        return []
+      default() {
+        return [];
       }
     }
   }

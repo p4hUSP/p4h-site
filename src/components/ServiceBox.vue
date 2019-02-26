@@ -20,9 +20,8 @@
 export default {
   props: {
     serviceInfo: Object
-    }
   }
+};
 </script>
 
-<style lang="css" scoped>
-</style>
+<style lang="css" scoped></style>

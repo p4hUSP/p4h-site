@@ -1,12 +1,20 @@
 <template>
-<div>
-  <NavBar v-if="getMediaWidth() > 720" :navLinksLeft="navLinksLeft" :navLinksRight="navLinksRight" />
-  <NavBarMobile v-else :navLinksLeft="navLinksLeft" :navLinksRight="navLinksRight" />
-  <Header />
-  <About />
-  <Service />
-  <Footer />
-</div>
+  <div>
+    <NavBar
+      v-if="getMediaWidth() > 720"
+      :navLinksLeft="navLinksLeft"
+      :navLinksRight="navLinksRight"
+    />
+    <NavBarMobile
+      v-else
+      :navLinksLeft="navLinksLeft"
+      :navLinksRight="navLinksRight"
+    />
+    <Header />
+    <About />
+    <Service />
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -30,37 +38,39 @@ export default {
   },
   data() {
     return {
-      navLinksLeft: [{
-          name: 'Home',
-          redirect: '#'
+      navLinksLeft: [
+        {
+          name: "Home",
+          redirect: "#"
         },
         {
-          name: 'Sobre',
-          redirect: '#about'
+          name: "Sobre",
+          redirect: "#about"
         },
         {
-          name: 'Serviços',
-          redirect: '#services'
+          name: "Serviços",
+          redirect: "#services"
         },
         {
-          name: 'Contato',
-          redirect: '#contact'
+          name: "Contato",
+          redirect: "#contact"
         }
       ],
-      navLinksRight: [{
-          name: 'Blog',
-          redirect: 'https://medium.com/p4husp'
+      navLinksRight: [
+        {
+          name: "Blog",
+          redirect: "https://medium.com/p4husp"
         },
         {
-          name: 'Material',
-          redirect: 'https://p4husp.github.io/material'
+          name: "Material",
+          redirect: "https://p4husp.github.io/material"
         }
       ]
-    }
+    };
   },
   methods: {
     getMediaWidth() {
-      return screen.width
+      return screen.width;
     }
   }
 };

@@ -15,8 +15,13 @@
       </div>
       <div class="flex flex-col items-center content-around">
         <div class="flex flex-row px-4 py-6">
-          <a v-for="socialinfo in socialinfos" :href="socialinfo.url" class="text-grey hover:text-grey-light mx-2">
-            <SocialMediaIcon :socialinfo="socialinfo"/>
+          <a
+            v-for="socialinfo in socialinfos"
+            :href="socialinfo.url"
+            class="text-grey hover:text-grey-light mx-2"
+            v-bind:key="socialinfo.name"
+          >
+            <SocialMediaIcon :socialinfo="socialinfo" />
           </a>
         </div>
         <div class="px-4 py-6">
@@ -39,10 +44,10 @@ export default {
   components: {
     SocialMediaIcon
   },
-  data () {
+  data() {
     return {
       socialinfos: socialInfos
-    }
+    };
   }
 };
 </script>

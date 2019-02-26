@@ -7,8 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faUniversity,
   faGraduationCap,
-  faChalkboardTeacher,
-  faBars
+  faChalkboardTeacher
 } from "@fortawesome/free-solid-svg-icons";
 
 import {

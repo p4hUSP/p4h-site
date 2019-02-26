@@ -4,7 +4,11 @@
       Serviços
     </h2>
     <div class="flex flex-wrap justify-around items-center px-8 py-12">
-      <ServiceBox v-for="service in servicesInfos" :serviceInfo="service"/>
+      <ServiceBox
+        v-for="service in servicesInfos"
+        v-bind:key="service.title"
+        :serviceInfo="service"
+      />
     </div>
   </section>
 </template>
@@ -17,10 +21,10 @@ export default {
   components: {
     ServiceBox
   },
-  data () {
+  data() {
     return {
       servicesInfos: servicesInfos
-    }
+    };
   }
 };
 </script>
