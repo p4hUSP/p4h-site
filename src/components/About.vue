@@ -7,7 +7,7 @@
       <h2 class="text-5xl text-center text-black">Sobre</h2>
     </div>
     <div class="flex-1 md:mx-32 px-16">
-      <p class="font-serif md:text-left sm:text-center text-grey-lighter text-3xl">
+      <p class="font-serif md:text-left sm:text-center text-grey-lighter md:text-3xl text-2xl">
         Somos um grupo de pessoas formadas nas ciências humanas. Temos como
         objetivo difundir nos cursos de humanidades o uso de programação e
         outras tecnologias para a análise de dados.
