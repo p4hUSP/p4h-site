@@ -4,13 +4,13 @@
             v-on:click="ToggleMenuChange">
       <span class="text-2xl">&#9776;</span>
     </button>
-    <nav :class="['fixed flex flex-col z-40 pt-12 bg-grey-lightest h-screen toggled-menu', toggled ? 'visible w-4/5' : 'invisible w-1']">
-      <ul class="list-reset text-3xl">
+    <nav :class="['fixed flex flex-col h-screen z-40 pt-12 bg-grey-lightest toggled-menu', toggled ? 'visible w-4/5' : 'invisible w-1']">
+      <ul :class="['list-reset text-3xl toggled-items', toggled ? 'visible' : 'invisible ml-0 opacity-0']">
         <li v-for="navlink in navLinksLeft" class="my-8">
           <a class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">{{ navlink.name }}</a>
         </li>
       </ul>
-      <ul class="list-reset text-3xl">
+      <ul :class="['list-reset text-3xl toggled-items', toggled ? 'visible' : 'invisible ml-0 opacity-0']">
         <li v-for="navlink in navLinksRight" class="my-8">
           <a class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">{{ navlink.name }}</a>
         </li>
@@ -50,6 +50,11 @@ export default {
 
 <style lang="css" scoped>
 .toggled-menu {
-  transition: all 0.5s ease-in-out;
+  opacity: .97;
+  transition: all 0.4s ease-in-out;
+}
+
+.toggled-items {
+  transition: all 0.1s ease-in-out;
 }
 </style>
