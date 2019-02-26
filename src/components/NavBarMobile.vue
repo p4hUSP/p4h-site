@@ -7,7 +7,7 @@
     <nav :class="['fixed flex flex-col h-screen z-40 pt-12 bg-grey-lightest toggled-menu', toggled ? 'visible w-4/5' : 'invisible w-1']">
       <ul :class="['list-reset text-3xl toggled-items', toggled ? 'visible' : 'invisible ml-0 opacity-0']">
         <li v-for="navlink in navLinksLeft" class="my-8">
-          <a class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">{{ navlink.name }}</a>
+          <a v-on:click="ToggleMenuChange" class="no-underline text-grey-dark hover:text-grey" :href="navlink.redirect">{{ navlink.name }}</a>
         </li>
       </ul>
       <ul :class="['list-reset text-3xl toggled-items', toggled ? 'visible' : 'invisible ml-0 opacity-0']">
