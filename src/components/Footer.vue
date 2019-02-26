@@ -14,10 +14,10 @@
         </div>
       </div>
       <div class="flex flex-col items-center content-around">
-        <div class="px-4 py-6">
-          <span class="text-grey">
-            <SocialMediaIcon v-for="socialinfo in socialinfos" :socialinfo="socialinfo"/>
-          </span>
+        <div class="flex flex-row px-4 py-6">
+          <a v-for="socialinfo in socialinfos" :href="socialinfo.url" class="text-grey hover:text-grey-light mx-2">
+            <SocialMediaIcon :socialinfo="socialinfo"/>
+          </a>
         </div>
         <div class="px-4 py-6">
           <span class="text-grey">

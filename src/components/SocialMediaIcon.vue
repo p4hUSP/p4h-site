@@ -1,6 +1,6 @@
 <template lang="html">
-  <svg class="w-32 text-grey">
-    <font-awesome-icon icon="socialinfo.iconName"/>
+  <svg class="w-16 h-16">
+    <font-awesome-icon :icon="{ prefix: socialinfo.iconPrefix, iconName: socialinfo.iconName }"/>
   </svg>
 </template>
 

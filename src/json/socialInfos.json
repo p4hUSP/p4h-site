@@ -3,5 +3,15 @@
     "url": "https://facebook.com/p4husp",
     "iconPrefix": "fab",
     "iconName": "facebook"
+  },
+  {
+    "url": "https://github.com/p4husp",
+    "iconPrefix": "fab",
+    "iconName": "github"
+  },
+  {
+    "url": "https://medium.com/p4husp",
+    "iconPrefix": "fab",
+    "iconName": "medium"
   }
 ]
