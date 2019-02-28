@@ -14,5 +14,5 @@ deploy:
   keep-history: true
   on:
     branch: master
-  repo: p4hUSP/p4husp.github.io.git
+  repo: p4hUSP/p4husp.github.io
   target_branch: master
