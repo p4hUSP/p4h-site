@@ -4,14 +4,15 @@ node_js:
   - '8.9.4'
 
 script:
-  - npm run build --fix
+  - npm run build
 
 deploy:
   local-dir: dist
   provider: pages
   skip-cleanup: true
-  repo: p4hUSP/p4husp.github.io.git
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
     branch: master
+  repo: p4hUSP/p4husp.github.io.git
+  target_branch: master
